@@ -1,14 +1,14 @@
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>File Size Exampe</title>
-  <script src="size.js"></script>
+  <title>Upload Files</title>
 </head>
-<body onload=formatData()>
-  <p id="data">Filesize,Width,Height</p>
+
+<body>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="files[]" multiple>
+    <input type="submit" value="Upload Files" name="submit">
+  </form>
+  <p>Nots: This program displays the image data in CSV formatting for easy conversion to Excel documents.</p>
+  <p id="data">Url,Filesize,Width,Height</p>
+
+  <script src="size.js"></script>
 </body>
-</html>
